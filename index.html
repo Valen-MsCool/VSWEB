@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html style="background-color: white;">
+<head>
+	<title>VS Web Development</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<meta name="copyright" content="Copyright 1999-2018. Plesk International GmbH. All rights reserved.">
+ 
+<meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <meta http-equiv="Cache-Control" content="no-cache">
+
+  <style>
+    @import  url(//fonts.googleapis.com/css?family=Lato:300:400);
+    body {
+      margin:0;
+ 
+   
+    }
+    h1 {
+      font-family: 'Lato', sans-serif;
+      font-weight:300;
+      letter-spacing: 2px;
+      font-size:48px;
+    }
+    p {
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 1px;
+      font-size:14px;
+      color: #333333;
+    }
+    .header {
+      position:relative;
+      text-align:center;
+      background-image: linear-gradient(60deg, rgb(58, 60, 183) 0%, rgb(0, 158, 71) 100%);
+      color:white;
+    }
+    .logo {
+      width:50px;
+      fill:white;
+      padding-right:15px;
+      display:inline-block;
+      vertical-align: middle;
+    }
+    .inner-header {
+      height:65vh;
+      width:100%;
+      margin: 0;
+      padding: 0;
+    }
+    .flex { /*Flexbox for containers*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .waves {
+      position:relative;
+      width: 100%;
+      height:15vh;
+      margin-bottom:-7px; /*Fix for safari gap*/
+      min-height:100px;
+      max-height:200px;
+    }
+    .content {
+      position:relative;
+      height:20vh;
+      text-align:center;
+      background-color: white;
+    }
+    /* Animation */
+    .parallax > use {
+      animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+    }
+    .parallax > use:nth-child(1) {
+      animation-delay: -2s;
+      animation-duration: 7s;
+    }
+    .parallax > use:nth-child(2) {
+      animation-delay: -3s;
+      animation-duration: 10s;
+    }
+    .parallax > use:nth-child(3) {
+      animation-delay: -4s;
+      animation-duration: 13s;
+    }
+    .parallax > use:nth-child(4) {
+      animation-delay: -5s;
+      animation-duration: 20s;
+    }
+    @keyframes  move-forever {
+      0% {
+        transform: translate3d(-90px,0,0);
+      }
+      100% {
+        transform: translate3d(85px,0,0);
+      }
+    }
+    /*Shrinking for mobile*/
+    @media (max-width: 768px) {
+      .waves {
+        height:60px;
+        min-height:60px;
+      }
+      .content {
+        height:30vh;
+      }
+      h1 {
+        font-size:24px;
+      }
+    }
+ 
+  </style>
+</head>
+
+<body>
+<div id="divonnavbar">
+<nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="].png" style="height: 80px; width: 80px;">
+      <a class="navbar-brand" href="#" style="color: white;margin-top: 10px;">VS Web Development</a>
+     
+
+     
+    </div>
+ 
+    <div class="collapse navbar-collapse" id="myNavbar" style="background-color: rgb(0, 0, 0);">
+      <ul class="nav navbar-nav" >
+        
+       
+        <li ><a href="about.html">About Us</a></li>
+
+        <li ><a href="contact.html" >Send an Email</a></li>
+      </ul>
+    </div>
+
+</nav>
+ 
+</div>
+    
+    <div class="travel_mainDiv"> 
+      
+
+        <div class="inner-header flex">
+          <h1 style="font-size: 70px;">VS Web Development</h1>
+        </div>
+        <div class="flex">
+    
+        </div>
+        <div>
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="content flex">
+      
+      </div>
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+      // <![CDATA[  <-- For SVG support
+      if ('WebSocket' in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+          var address = protocol + window.location.host + window.location.pathname + '/ws';
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == 'reload') window.location.reload();
+            else if (msg.data == 'refreshcss') refreshCSS();
+          };
+          if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+            console.log('Live reload enabled.');
+            sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+          }
+        })();
+      }
+      else {
+        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+      }
+      // ]]>
+    </script>
+      <div id="divdiv">
+        <br>
+      
+
+        <h3 class="text-left"  style="color: black; ">Hello, I am Valentina Salinas, and I am a 10 year old app, game, and web developer. I have a passion for coding, sports, reading, and math. I would love to help your business grow by making a website the whole world can see. With VS Web Development I can make a fully functioning website for your growing business for as low as $250.</h3>
+       <br>
+        <h3 class="text-left"  style="color: black;">Your $250 website pack will include text, images, and styling. You can make an extra purchase for bootstrap (your website working well on mobile devices) for $100, and a purchase for javascript (buttons, maps, and logic that makes your website more interactive) for $150.   </h3>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://www.transparentpng.com/thumb/up-arrow/Fjx7Uy-up-arrow-clipart-transparent.png" style="height: 20px;"></button>
+
+        <br>
+        <br>
+        <br>
+    <div id="page">
+   
+  
+
+
+          
+   
+    
+    
+    
+    
+    
+  <section id="contact">
+   
+
+<hr style="width:100%;">
+<div class="contact_1" id="blog">
+      
+        
+
+           <a href="mailto:valentinasalinascode@gmail.com?Subject=VS Web"  class="mail">
+               <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;valentinasalinascode@gmail.com</h5>
+            </a> 
+            <br>
+    
+          </div>
+</section>
+</div>
+</div>
+</div>
+
+<style>
+body{
+font-family:verdana;
+color:white;
+margin: 0px;
+background-image: linear-gradient(60deg, rgb(58, 60, 183) 0%, rgb(0, 158, 71) 100%);
+
+}
+#books{
+background-color: white;
+
+
+}
+#divdiv{
+
+  background-color: white;
+
+}
+
+.mail{
+
+color: white;  
+}
+#myNavbar li a{
+color: white;  
+margin-top: 5px;
+
+}
+#myNavbar li{
+color: white;  
+background-color:transparent;
+margin-top: 5px;
+transition: background-color 0.5s;
+height: 100%;
+
+
+}
+#myNavbar li:hover{
+color: white;  
+background-color: rgba(168, 168, 168, 0.3);
+margin-top: 5px;
+height: 100%;
+}
+#myNavbar{
+background-color: rgb(0, 46, 46);
+margin-top: 0px;
+margin-bottom: 0px;
+
+}
+.text-left{
+
+  font-family: 'Lato', sans-serif;
+}
+.mail{
+  color: blue;
+}
+#me{
+  max-width: 200px;
+   height: auto;
+}
+.collum{
+float: left;
+width: 33.333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333%;
+padding: 10px;
+height: 600px;
+
+}
+.row{
+
+  box-sizing: border-box;
+
+}
+#page{
+  background-color: white;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(0, 9, 139);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+#divonnavbar{
+  position:fixed;
+    top:0;
+width:100%;
+z-index:100;
+
+}
+</style>
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+</body>
+</html>
